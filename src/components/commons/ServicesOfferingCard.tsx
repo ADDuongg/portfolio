@@ -14,13 +14,11 @@ export const ServicesOfferingCard = () => {
   return (
     <motion.div
       ref={refServices}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: isInViewServices ? 1 : 0 }}
-      className={`bg-card-gradient rounded-2xl px-6 pb-9 shadow-md ${
-        isInViewServices && "animate-moveBottomToTop"
-      } col-span-2 sm:col-span-2 cursor-pointer`}
+      className={` ${
+        isInViewServices ? "animate-moveBottomToTop" : "opacity-0"
+      } `}
     >
-      <div className="relative flex flex-col justify-between items-center gap-y-6 h-full pt-20">
+      <div className="relative flex flex-col justify-between items-center gap-y-6 h-full pt-14">
         <div className="w-[80%] flex justify-between items-center">
           <ComputerDesktopIcon className="size-10 text-blue-500" />
           <CircleStackIcon className="size-10 text-blue-500" />

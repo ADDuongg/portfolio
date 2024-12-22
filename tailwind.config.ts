@@ -5,6 +5,7 @@ export default {
     content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+	"./src/sections/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -86,11 +87,11 @@ export default {
 			  },
 		  },
 		  animation: {
-			scaleUp: "scaleUp 2s ease-in-out",
-			moveLeftToRight: "moveLeftToRight 2s ease-in-out",
-			moveRightToLeft: "moveRightToLeft 2s ease-in-out",
-			moveTopToBottom: "moveTopToBottom 2s ease-in-out",
-			moveBottomToTop: "moveBottomToTop 2s ease-in-out",
+			scaleUp: "scaleUp 1.5s ease-in-out",
+			moveLeftToRight: "moveLeftToRight 1.5s ease-in-out",
+			moveRightToLeft: "moveRightToLeft 1.5s ease-in-out",
+			moveTopToBottom: "moveTopToBottom 1.5s ease-in-out",
+			moveBottomToTop: "moveBottomToTop 1.5s ease-in-out",
 		  },
   	}
   },

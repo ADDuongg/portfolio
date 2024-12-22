@@ -9,9 +9,9 @@ export const CredentialsCard = () => {
   return (
     <motion.div
       ref={refCredentials}
-      className={`bg-card-gradient rounded-2xl xl:p-9 p-4 shadow-md ${
-        isInViewCredentials ? "animate-moveLeftToRight" : "opacity-0"
-      } col-span-2 lg:col-span-1  cursor-pointer`}
+      className={`h-full ${
+        isInViewCredentials ? "animate-scaleUp" : "opacity-0"
+      }`}
     >
       <div className="relative space-y-6 h-full flex flex-col justify-between">
         <div className="font-caveat xl:text-7xl text-6xl font-bold text-secondary flex-1 text-center">

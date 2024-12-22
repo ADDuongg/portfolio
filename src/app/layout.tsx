@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/lib/theme-provider";
-import { Header } from "@/components/commons";
+import { Footer, Header } from "@/components/commons";
 import Head from "next/head";
 
 const geistSans = Geist({
@@ -36,9 +36,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="min-h-screen">
+          <div className="min-h-screen py-5">
             <Header />
             <div className="h-100 xl:py-20 py-5 xl:px-40 px-5">{children}</div>
+            <Footer />
           </div>
         </ThemeProvider>
       </body>

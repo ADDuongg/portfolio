@@ -1,6 +1,6 @@
 export const webRoutes = {
   home: "/home",
-  about: "/about",
+  about: "/about-me",
   projects: "/projects",
   skills: "/skills",
   contact: "/contact",

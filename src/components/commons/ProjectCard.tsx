@@ -11,9 +11,7 @@ export const ProjectCard = () => {
   return (
     <motion.div
       ref={refProject}
-      className={`bg-card-gradient rounded-2xl xl:p-9 p-4 shadow-md ${
-        isInViewProject ? "animate-moveRightToLeft" : "opacity-0"
-      } col-span-2 lg:col-span-1 cursor-pointer`}
+      className={` ${isInViewProject ? "animate-scaleUp" : "opacity-0"} `}
     >
       <div className="relative space-y-6">
         <div className="flex-1">
