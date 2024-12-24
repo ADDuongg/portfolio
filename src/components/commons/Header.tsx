@@ -42,7 +42,7 @@ export const Header = () => {
       <div className="hidden md:flex items-center space-x-2">
         <ModeToggle />
         <Button variant="secondary" rounded={"full"} size={"lg"}>
-          <Link href={"/contact"}>Let&apos;s</Link>
+          <Link href={"/contact"}>Let&apos;s Talk</Link>
         </Button>
       </div>
 
