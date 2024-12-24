@@ -1,13 +1,16 @@
 "use client";
-import {
-  ComputerDesktopIcon,
-  CircleStackIcon,
-  CpuChipIcon,
-  WrenchScrewdriverIcon,
-} from "@heroicons/react/24/solid";
-import { IconNavigate } from "./IconNavigate";
-import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "../ui/tooltip";
+import { IconNavigate } from "./IconNavigate";
+import { ServicesOfferingIcon } from "@/constants";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 export const ServicesOfferingCard = () => {
   const refServices = useRef<HTMLDivElement>(null);
   const isInViewServices = useInView(refServices, { once: true });
@@ -20,10 +23,23 @@ export const ServicesOfferingCard = () => {
     >
       <div className="relative flex flex-col justify-between items-center gap-y-6 h-full pt-14">
         <div className="w-[80%] flex justify-between items-center">
-          <ComputerDesktopIcon className="size-10 text-blue-500" />
-          <CircleStackIcon className="size-10 text-blue-500" />
-          <CpuChipIcon className="size-10 text-blue-500" />
-          <WrenchScrewdriverIcon className="size-10 text-blue-500" />
+          {ServicesOfferingIcon?.map((item, index) => {
+            return (
+              <TooltipProvider key={index} delayDuration={200}>
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <FontAwesomeIcon
+                      icon={item.icon}
+                      className="fa-2x text-blue-600"
+                    />
+                  </TooltipTrigger>
+                  <TooltipContent>
+                    <p>{item.title}</p>
+                  </TooltipContent>
+                </Tooltip>
+              </TooltipProvider>
+            );
+          })}
         </div>
         <div className="flex flex-col gap-y-2 items-start w-[80%]">
           <span className="text-secondary ">Specialization</span>

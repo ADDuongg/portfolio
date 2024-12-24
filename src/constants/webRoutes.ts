@@ -1,7 +1,7 @@
 export const webRoutes = {
   home: "/home",
   about: "/about-me",
-  projects: "/projects",
+  projects: "/project",
   skills: "/skills",
   contact: "/contact",
 };

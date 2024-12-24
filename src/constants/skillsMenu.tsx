@@ -11,6 +11,11 @@ import socketioImage from "@/assets/images/socketio.png";
 import linuxImage from "@/assets/images/linux.png";
 import gitImage from "@/assets/images/git.png";
 import mysql from "@/assets/images/mysql.png";
+import reduxImage from "@/assets/images/redux.png";
+import antDesignImage from "@/assets/images/antd.png";
+import bootstrapImage from "@/assets/images/bootstrap.png";
+import tailwindcssImage from "@/assets/images/tailwindcss.png";
+import reactQueryImage from "@/assets/images/react-query.png";
 export const skillsMenu: SkillsMenuInterface[] = [
   {
     key: "react",
@@ -95,5 +100,40 @@ export const skillsMenu: SkillsMenuInterface[] = [
     description:
       "MySQL is a free and open-source relational database management system that is widely used for web applications.",
     image: mysql,
+  },
+  {
+    key: "redux",
+    label: "Redux",
+    description:
+      "Redux is a predictable state container for JavaScript applications that is widely used for building complex web applications.",
+    image: reduxImage,
+  },
+  {
+    key: "antdesign",
+    label: "Ant Design",
+    description:
+      "Ant Design is a design system for building user interfaces with React.",
+    image: antDesignImage,
+  },
+  {
+    key: "bootstrap",
+    label: "Bootstrap",
+    description:
+      "Bootstrap is a free and open-source front-end framework for building responsive, mobile-first websites.",
+    image: bootstrapImage,
+  },
+  {
+    key: "tailwindcss",
+    label: "Tailwind CSS",
+    description:
+      "Tailwind CSS is a utility-first CSS framework that is widely used for building user interfaces.",
+    image: tailwindcssImage,
+  },
+  {
+    key: "react-query",
+    label: "React Query",
+    description:
+      "React Query is a library for fetching and caching data in React applications.",
+    image: reactQueryImage,
   },
 ];

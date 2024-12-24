@@ -12,6 +12,7 @@ import Autoplay from "embla-carousel-autoplay";
 import { skillsMenu } from "@/constants";
 import Image from "next/image";
 import { IconNavigate } from "./IconNavigate";
+import Link from "next/link";
 
 export const MySkillsCard = ({
   hasDescription = true,
@@ -57,7 +58,9 @@ export const MySkillsCard = ({
             <span className="text-secondary ">What i can do</span>
             <span className="text-2xl dark:text-white">My Skills</span>
           </div>
-          <IconNavigate />
+          <Link href={"/skills"}>
+            <IconNavigate />
+          </Link>
         </>
       )}
     </div>

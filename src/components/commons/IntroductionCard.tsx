@@ -1,8 +1,6 @@
-import Image from "next/image";
-import React from "react";
 import portfolio from "@/assets/images/portfolio.jpg";
+import Image from "next/image";
 import { IconNavigate } from "./IconNavigate";
-import Link from "next/link";
 export const IntroductionCard = () => {
   return (
     <div className="flex md:flex-row flex-col gap-x-5 relative h-full">

@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import { IconNavigate } from "./IconNavigate";
 import { useInView, motion } from "framer-motion";
+import Image from "next/image";
 
 export const ContactCard = () => {
   const refContact = useRef<HTMLDivElement>(null);
@@ -13,14 +14,16 @@ export const ContactCard = () => {
       }`}
       ref={refContact}
     >
-      <img
+      <Image
         src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png"
         alt="icon"
+        width={0}
+        height={0}
         className="w-[50px] h-[100px] absolute top-0 right-0 brightness-50"
       />
 
       <div className="flex flex-col gap-y-2 pt-16 h-full">
-        <span className="text-3xl">Let's</span>
+        <span className="text-3xl">Let&apos;s</span>
         <span className="text-3xl dark:text-white flex gap-x-2">
           work <span className="text-blue-600">together</span>
         </span>

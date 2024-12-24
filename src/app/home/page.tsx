@@ -1,13 +1,12 @@
 import {
   ContactCard,
   CredentialsCard,
+  IntroductionCard,
   MySkillsCard,
   ProjectCard,
   RunningText,
   ServicesOfferingCard,
   SummaryCard,
-  IntroductionCard,
-  Footer,
 } from "@/components/commons";
 import Link from "next/link";
 export default function Page() {
@@ -28,14 +27,20 @@ export default function Page() {
         </div>
 
         {/* Credentials Card */}
-        <div className="bg-card-gradient rounded-2xl xl:p-9 p-4 shadow-md col-span-2 lg:col-span-1 cursor-pointer animate-moveLeftToRight">
+        <Link
+          href={"/about-me"}
+          className="bg-card-gradient rounded-2xl xl:p-9 p-4 shadow-md col-span-2 lg:col-span-1 cursor-pointer animate-moveLeftToRight"
+        >
           <CredentialsCard />
-        </div>
+        </Link>
 
         {/* Project Card */}
-        <div className="bg-card-gradient rounded-2xl xl:p-9 p-4 shadow-md col-span-2 lg:col-span-1 cursor-pointer animate-moveRightToLeft">
+        <Link
+          href={"/project"}
+          className="bg-card-gradient rounded-2xl xl:p-9 p-4 shadow-md col-span-2 lg:col-span-1 cursor-pointer animate-moveRightToLeft"
+        >
           <ProjectCard />
-        </div>
+        </Link>
 
         {/* My Skills Card */}
         <div className="bg-card-gradient rounded-2xl xl:p-9 p-4 shadow-md animate-moveLeftToRight col-span-2 md:col-span-3">
@@ -43,14 +48,20 @@ export default function Page() {
         </div>
 
         {/* Contact Card */}
-        <div className="bg-card-gradient rounded-2xl px-6 pb-9 shadow-md animate-moveRightToLeft md:col-span-1 col-span-2 cursor-pointer">
+        <Link
+          href={"/contact"}
+          className="bg-card-gradient rounded-2xl px-6 pb-9 shadow-md animate-moveRightToLeft md:col-span-1 col-span-2 cursor-pointer"
+        >
           <ContactCard />
-        </div>
+        </Link>
 
         {/* Services Offering Card */}
-        <div className="bg-card-gradient rounded-2xl px-6 pb-9 shadow-md col-span-2 sm:col-span-2 cursor-pointer animate-scaleUp">
+        <Link
+          href={"/services"}
+          className="bg-card-gradient rounded-2xl px-6 pb-9 shadow-md col-span-2 sm:col-span-2 cursor-pointer animate-scaleUp"
+        >
           <ServicesOfferingCard />
-        </div>
+        </Link>
 
         {/* Summary Card */}
         <div className="bg-card-gradient rounded-2xl px-6 py-9 shadow-md col-span-2 sm:col-span-2 animate-scaleUp">

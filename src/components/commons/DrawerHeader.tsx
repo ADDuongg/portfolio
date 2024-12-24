@@ -70,7 +70,7 @@ export const DrawerHeader = () => {
               size={"lg"}
               className="flex-1 text-white"
             >
-              Let's Talk
+              <Link href={"/contact"}>Let&apos;s</Link>
             </Button>
             <ModeToggle />
           </div>

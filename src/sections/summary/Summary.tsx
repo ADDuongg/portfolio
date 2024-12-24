@@ -24,7 +24,7 @@ export const Summary = () => {
         </div>
       </div>
       <div className="lg:col-span-8 col-span-12 animate-scaleUp text-center flex items-center justify-between h-[50px]">
-        <img
+        <Image
           src={
             "https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
           }
@@ -36,7 +36,7 @@ export const Summary = () => {
         <span className="dark:text-white xl:text-6xl md:text-5xl text-4xl">
           SELF-SUMMARY
         </span>
-        <img
+        <Image
           src={
             "https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
           }
@@ -54,9 +54,11 @@ export const Summary = () => {
           create efficient, scalable web applications, ensuring high-quality
           code and seamless user experiences.
         </span>
-        <img
+        <Image
           src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png"
           alt="icon"
+          width={0}
+          height={0}
           className="w-[50px] h-[100px] absolute top-0 left-5 brightness-50"
         />
       </div>

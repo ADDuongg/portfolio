@@ -20,9 +20,9 @@ export const Experiences = () => {
         </div>
         <div className="text-secondary">
           <div>During my work, I contributed to the following websites:</div>
-          <ul className="list-decimal pl-5 text-white">
+          <ul className="list-decimal pl-5 dark:text-white text-black">
             <li>
-              <div className="text-white">Docker Management Website</div>
+              <div>Docker Management Website</div>
               <ul className="list-disc pl-5 text-secondary">
                 <li>
                   Responsibilities: Designed and developed the user interface,
@@ -36,7 +36,7 @@ export const Experiences = () => {
               </ul>
             </li>
             <li>
-              <div className="text-white">Hospital Management Website</div>
+              <div>Hospital Management Website</div>
               <ul className="list-disc pl-5 text-secondary">
                 <li>
                   Responsibilities: Redesigned the UI/UX, integrated APIs to
@@ -48,7 +48,7 @@ export const Experiences = () => {
               </ul>
             </li>
             <li>
-              <div className="text-white">Car Management Website</div>
+              <div>Car Management Website</div>
               <ul className="list-disc pl-5 text-secondary">
                 <li>
                   Responsibilities: Designed and developed the UI/UX, integrated

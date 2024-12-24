@@ -1,34 +1,13 @@
 "use client";
-import React from "react";
 import portfolio from "@/assets/images/portfolio.jpg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
-import { faFacebook, faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { Button } from "@/components/ui/button";
-import { useInView, motion } from "framer-motion";
+import { iconSocial } from "@/constants";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion, useInView } from "framer-motion";
 import Image from "next/image";
-const contactIcons = [
-  {
-    icon: faUser,
-    title: "User",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    icon: faEnvelope,
-    title: "Email",
-    description: "lorem@ipsum.com",
-  },
-  {
-    icon: faFacebook,
-    title: "Facebook",
-    description: "@facebook",
-  },
-  {
-    icon: faYoutube,
-    title: "Youtube",
-    description: "@youtube",
-  },
-];
+import Link from "next/link";
+import React from "react";
+
 export const InfoCard = () => {
   const InfoCardRef = React.useRef<HTMLDivElement>(null);
   const isInViewInfoCard = useInView(InfoCardRef, { once: true });
@@ -53,7 +32,7 @@ export const InfoCard = () => {
         <div className="text-secondary">@duongnv</div>
       </div>
       <div className="flex gap-x-3">
-        {contactIcons.map((item, index) => (
+        {iconSocial.map((item, index) => (
           <div
             key={index}
             className="flex gap-x-3 bg-card rounded-full p-4 items-center dark:hover:bg-white hover:bg-black cursor-pointer shadow-lg dark:hover:text-black hover:text-white"
@@ -62,8 +41,8 @@ export const InfoCard = () => {
           </div>
         ))}
       </div>
-      <Button className="rounded-full w-full dark:bg-secondary bg-black  hover:bg-secondary text-white dark:hover:text-black">
-        Contact me
+      <Button className="rounded-full w-full" variant={"secondary"}>
+        <Link href={"/contact"}>Contact me</Link>
       </Button>
     </motion.div>
   );
