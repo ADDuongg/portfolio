@@ -37,14 +37,14 @@ export const MySkillsCard = ({
           {skillsMenu.map((skill, index) => (
             <CarouselItem
               key={index}
-              className="pl-1 basis-1/2 md:basis-1/4 lg:basis-1/5 h-full "
+              className="pl-1 basis-1/2 md:basis-1/4 lg:basis-1/5 h-full"
             >
               <Image
                 src={skill.image}
                 alt={skill.label}
                 width={0}
                 height={0}
-                className="w-24 h-full rounded-lg shadow-lg"
+                className="w-24 h-full rounded-full shadow-lg"
               />
             </CarouselItem>
           ))}
