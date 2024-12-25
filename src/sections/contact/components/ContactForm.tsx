@@ -44,7 +44,7 @@ export function ContactForm() {
   }
 
   return (
-    <div className="flex lg:flex-row flex-col gap-10">
+    <div className="flex lg:flex-row flex-col gap-y-10 justify-around">
       <div className="basis-4/12 space-y-10 animate-moveLeftToRight">
         <div className="dark:text-white mb-5">CONTACT INFO</div>
         <div className="flex flex-col gap-y-16">
@@ -74,11 +74,11 @@ export function ContactForm() {
         </div>
       </div>
 
-      <div className="basis-8/12 bg-card-gradient rounded-xl py-10 animate-moveRightToLeft">
+      <div className="basis-5/12 bg-card-gradient rounded-xl p-10 animate-moveRightToLeft flex justify-center">
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="space-y-8 max-w-3xl mx-auto "
+            className="space-y-8 w-full"
           >
             <FormField
               control={form.control}
