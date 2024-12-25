@@ -16,6 +16,8 @@ import antDesignImage from "@/assets/images/antd.png";
 import bootstrapImage from "@/assets/images/bootstrap.png";
 import tailwindcssImage from "@/assets/images/tailwindcss.png";
 import reactQueryImage from "@/assets/images/react-query.png";
+import nginxImage from "@/assets/images/nginx.png";
+import postmanImage from "@/assets/images/postman.png";
 export const skillsMenu: SkillsMenuInterface[] = [
   {
     key: "react",
@@ -88,6 +90,13 @@ export const skillsMenu: SkillsMenuInterface[] = [
     image: linuxImage,
   },
   {
+    key: "nginx",
+    label: "Nginx",
+    description:
+      "Nginx is a free and open-source web server that is widely used for serving static files and proxying requests to backend services.",
+    image: nginxImage,
+  },
+  {
     key: "git",
     label: "Git",
     description:
@@ -135,5 +144,12 @@ export const skillsMenu: SkillsMenuInterface[] = [
     description:
       "React Query is a library for fetching and caching data in React applications.",
     image: reactQueryImage,
+  },
+  {
+    key: "postman",
+    label: "Postman",
+    description:
+      "Postman is a free and open-source tool for testing APIs and web services.",
+    image: postmanImage,
   },
 ];
