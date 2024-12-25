@@ -41,9 +41,11 @@ export const InfoCard = () => {
           </div>
         ))}
       </div>
-      <Button className="rounded-full w-full" variant={"secondary"}>
-        <Link href={"/contact"}>Contact me</Link>
-      </Button>
+      <Link href={"/contact"} className="w-full">
+        <Button className="rounded-full w-full" variant={"secondary"}>
+          Contact me
+        </Button>
+      </Link>
     </motion.div>
   );
 };

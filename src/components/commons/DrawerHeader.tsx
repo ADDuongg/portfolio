@@ -63,15 +63,17 @@ export const DrawerHeader = () => {
             })}
           </div>
 
-          <div className="flex items-center space-x-2 justify-center px-5">
-            <Button
-              variant="secondary"
-              rounded={"full"}
-              size={"lg"}
-              className="flex-1 text-white"
-            >
-              <Link href={"/contact"}>Let&apos;s</Link>
-            </Button>
+          <div className="flex items-center space-x-2 justify-between px-5">
+            <Link href={"/contact"} className="flex-1">
+              <Button
+                variant="secondary"
+                rounded={"full"}
+                size={"lg"}
+                className="w-full text-white"
+              >
+                Let&apos;s Talk
+              </Button>
+            </Link>
             <ModeToggle />
           </div>
         </DrawerContent>
